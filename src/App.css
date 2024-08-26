@@ -1,0 +1,9 @@
+/* index.css ou App.css */
+html, body {
+    background-color: #F1F1F1;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+}
