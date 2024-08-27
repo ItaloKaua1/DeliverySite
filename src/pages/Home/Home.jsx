@@ -8,6 +8,10 @@ const Home = () => {
             <h1>PRIMEIRA TELA</h1>
             <Navbar />
             <HorarioFuncionamento />
+            <h2>Marmita</h2>
+            <h2>Combos</h2>
+            <h2>Sobremesas</h2>
+            <h2>Bebidas</h2>
         </div>
     )
 }
