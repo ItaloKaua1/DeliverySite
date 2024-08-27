@@ -12,6 +12,7 @@ const Home = () => {
             <h2>Combos</h2>
             <h2>Sobremesas</h2>
             <h2>Bebidas</h2>
+            <h1>VAI TOMAR NO CU VITOR ROLA</h1>
         </div>
     )
 }
