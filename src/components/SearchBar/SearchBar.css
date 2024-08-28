@@ -1,0 +1,22 @@
+/* Styles.css */
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 789px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    border-radius: 5px;
+}
