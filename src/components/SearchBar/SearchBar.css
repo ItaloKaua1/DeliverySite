@@ -1,22 +1,31 @@
-/* Styles.css */
-
-input[type="text"] {
-    padding: 10px;
+.search-bar {
+    position: relative;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+  }
+  
+  .results {
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
-    max-width: 789px;
-    border-radius: 5px;
-    border: 1px solid #f1f1f1;
-    margin-bottom: 20px;
-}
-
-ul {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .results ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
-}
-
-li {
+  }
+  
+  .results li {
     padding: 8px;
+    cursor: pointer;
+  }
+  
+  .results li:hover {
     background-color: #f0f0f0;
-    margin: 5px 0;
-    border-radius: 5px;
-}
+  }
+  

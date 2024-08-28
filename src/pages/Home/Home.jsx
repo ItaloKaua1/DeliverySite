@@ -12,6 +12,9 @@ const Home = () => {
             <Navbar />
             <HorarioFuncionamento />
             <SearchBar items={items}/>
+
+        
+
         </div>
     )
 }
