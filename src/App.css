@@ -1,9 +1,10 @@
 /* index.css ou App.css */
 html, body {
     background-color: #F1F1F1;
+    display: flex; /* Define o body como um contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura do body para ocupar a tela inteira */
     margin: 0;
-    padding: 0;
-    min-height: 100%;
-    height: auto;
     width: 100%;
 }

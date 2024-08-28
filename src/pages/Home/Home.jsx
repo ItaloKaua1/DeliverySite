@@ -1,4 +1,5 @@
 import HorarioFuncionamento from '../../components/HorarioFuncionamento/HorarioFuncionamento'
+import Menu from '../../components/Menu/Menu'
 import Navbar from '../../components/Navbar/Navbar'
 import SearchBar from '../../components/SearchBar/SearchBar'
 
@@ -12,9 +13,7 @@ const Home = () => {
             <Navbar />
             <HorarioFuncionamento />
             <SearchBar items={items}/>
-
-        
-
+            <Menu />
         </div>
     )
 }

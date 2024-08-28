@@ -1,0 +1,47 @@
+.divCardapio {
+    background-color: #f1f1f1;
+    width: 789px;
+    height: auto; /* Ajusta a altura automaticamente ao conteúdo */
+    max-height: 77px;
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    margin-top: 100px; /* Ajusta a margem superior conforme necessário */
+}
+
+#titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+#divMarmita {
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos para os lados */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    width: 789px; /* Ocupa toda a largura da divCardapio */
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar a div */
+}
+
+.marmita {
+    display: flex;
+    flex-direction: column; /* Organiza os textos verticalmente */
+}
+
+#preco {
+    margin-top: 5px; /* Espaçamento entre 'Monte sua marmita' e o preço */
+    font-weight: bold; /* Destaque para o preço */
+}
+
+#imgMarmita {
+    width: 120px;
+    height: auto;
+    max-height: 100px;
+    margin-left: auto; /* Empurra a imagem para a direita */
+}
