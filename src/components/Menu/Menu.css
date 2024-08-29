@@ -20,7 +20,7 @@
     margin-left: 10px;
 }
 
-.divMarmita {
+.divOpcao {
     width: 789px; /* Ocupa toda a largura da divCardapio */
     height: 150px;
     background-color: white;
@@ -31,7 +31,7 @@
     display: flex;
 }
 
-.marmita {
+.nome {
     margin-left: 10px;
     flex: 1;
     align-self: baseline;
@@ -49,7 +49,7 @@
     margin-bottom: 1px;
 }
 
-#imgMarmita {
+.imgMenu {
     width: 120px;
     height: auto;
     flex: 0.6;
@@ -61,7 +61,7 @@
     height: auto;
 }
 
-#divCombo2{
+#space{
     margin-top: 4px;
 }
 
@@ -81,6 +81,7 @@
 #divBebidas {
     margin-top: 0;
     height: auto;
+    padding-bottom: 14vh;
 }
 
 #imgSuco {

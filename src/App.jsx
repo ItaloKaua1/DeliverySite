@@ -1,4 +1,5 @@
 import './App.css' 
+import ApresentationScreen from './pages/ApresentationScreen/ApresentationScreen'
 import Home from './pages/Home/Home'
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
   return (
     <>
       <div className='divApp'>
-        <Home />
+        {/* <Home /> */}
+        <ApresentationScreen />
       </div>
     </>
   )
