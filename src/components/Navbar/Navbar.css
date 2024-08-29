@@ -6,8 +6,6 @@
     border-radius: 18px 18px 0 0;
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     justify-content: space-around; /* Distribui os itens igualmente */
     align-items: center; /* Centraliza verticalmente */
