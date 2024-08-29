@@ -58,7 +58,7 @@ function Menu (){
                 </div>
                 <div className='divOpcao' id="space">
                     <p className='nome'>Suco 300ml</p>
-                    <p id="preco2">R$ 18,50</p>
+                    <p id="preco2">R$ 3,50</p>
                     <img src="/Suco_post.jpeg" alt="Suco" id="imgSuco"/>
                 </div>
             </section>
