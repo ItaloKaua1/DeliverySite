@@ -1,41 +1,46 @@
 #NavbarDiv {
     background-color: #ffff;
-    width: 54.79vw;
+    width: 100%;
+    max-width: 789px;
     height: 11.42vh;
     border-radius: 18px 18px 0 0;
     position: fixed;
-    align-items: center;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 88.57vh;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around; /* Distribui os itens igualmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .containerItems{
-    width: 70px;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    position: absolute;
     cursor: pointer;
+    flex: 1; /* Permite que os itens cresçam de forma igual */
+    max-width: 100px; /* Limita a largura máxima de cada item */
+    text-align: center;
 }
 
-.img{
-    position: relative;
-    top: 15px;
+.img {
+    margin-top: 10px;
+    width: 40px;
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-#cardapio {
-    left: 106px;
-}
+@media (max-width: 768px) {
+    #NavbarDiv {
+        width: 100%;
+        height: auto;
+    }
+    
+    .img {
+        width: 30px;
+    }
 
-#sacola{
-    left: 288px;
-}
-
-#pedidos {
-    left: 470px;
-}
-
-#perfil {
-    left: 652px;
+    .containerItems p {
+        font-size: 0.8rem; /* Ajusta o tamanho da fonte para telas menores */
+    }
 }
