@@ -12,7 +12,7 @@ const Home = () => {
     return(
         <div className='containerDefault' id='divHome'>
             <Logo />
-            <Navbar />
+            {/* <Navbar /> */}
             <HorarioFuncionamento />
             <SearchBar items={items}/>
             <Menu />

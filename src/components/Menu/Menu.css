@@ -5,8 +5,12 @@
     height: 202px; /* Ajusta a altura automaticamente ao conteúdo */
     display: flex;
     flex-direction: column; /* Organiza os elementos verticalmente */
+    margin-top: 150px;
     align-items: flex-start; /* Alinha os itens à esquerda */
-    margin-top: 150px; /* Ajusta a margem superior conforme necessário */
+}
+
+#divCombos{
+    margin-top: 0;
 }
 
 #titulo {
@@ -16,7 +20,7 @@
     margin-left: 10px;
 }
 
-#divMarmita {
+.divMarmita {
     width: 789px; /* Ocupa toda a largura da divCardapio */
     height: 150px;
     background-color: white;
@@ -38,10 +42,11 @@
     margin-left: 10px;
     font-size: bold;
     flex: 1;
-    align-self: flex-end;
+    align-self: center;
     justify-content: flex-start;
     transform: translateX(-103%); 
     font-weight: bold;
+    margin-bottom: 1px;
 }
 
 #imgMarmita {
@@ -50,4 +55,48 @@
     flex: 0.6;
     align-self: center;
     margin-right: 10px;
+}
+
+#divCombos{
+    height: auto;
+}
+
+#divCombo2{
+    margin-top: 4px;
+}
+
+#divSobremesas {
+    height: auto;
+    margin-top: 0;
+}
+
+#imgCocada {
+    width: 120px;
+    height: 100px;
+    flex: 0.6;
+    align-self: center;
+    margin-right: 10px;
+}
+
+#divBebidas {
+    margin-top: 0;
+    height: auto;
+}
+
+#imgSuco {
+    width: 0px;
+    flex: 0.5;
+    align-self: center;
+    margin-right: 32px;
+}
+
+#preco2{
+    margin-left: 10px;
+    font-size: bold;
+    flex: 1;
+    align-self: center;
+    justify-content: flex-start;
+    transform: translateX(-102.5%); 
+    font-weight: bold;
+    margin-bottom: 1px;
 }
