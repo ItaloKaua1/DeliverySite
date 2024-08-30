@@ -1,18 +1,14 @@
 import './App.css' 
-import ApresentationScreen from './pages/ApresentationScreen/ApresentationScreen'
-import Home from './pages/Home/Home'
-import Pagamento from './pages/Pagamento/Pagamento'
-import MontarMarmita from './pages/MonteSuaMarmita/MontarMarmita'
+
+import Main from './main'
+import React from 'react'
 
 function App() {
 
   return (
     <>
       <div className='divApp'>
-        {/* <Home /> */}
-        {/* <ApresentationScreen /> */}
-        {/* < Pagamento /> */}
-        <MontarMarmita />
+        <Main />
       </div>
     </>
   )

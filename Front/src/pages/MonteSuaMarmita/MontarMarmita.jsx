@@ -55,7 +55,7 @@ const MontarMarmita = () => {
 
       <section className="observacoes">
         <label htmlFor="observacao">Alguma observação?</label>
-        <textarea id="observacao" placeholder="Escreva aqui..."></textarea>
+        <textarea id="observacaoCampo" placeholder="Escreva aqui..."></textarea>
       </section>
 
     </div>
