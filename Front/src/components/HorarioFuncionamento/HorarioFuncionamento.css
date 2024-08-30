@@ -1,12 +1,12 @@
 #divHorario {
-    position: relative; /* Fixa o elemento na tela */
-    top: 2--px;
+    position: relative;
+    top: 20px; /* Correção do valor de top */
     width: 100%;
     max-width: 220px;
     height: auto;
-    display: flex; /* Habilita o flexbox para alinhamento */
-    align-items: center; /* Alinha os itens verticalmente */
-    justify-content: space-around; /* Alinha os itens horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     cursor: pointer;
 }
 

@@ -1,0 +1,55 @@
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo esmaecido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001; /* Certifique-se de que o modal apareça acima de outros elementos */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 608px;
+    height: 100%;
+    max-height: 362px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1002; /* Para garantir que o conteúdo do modal esteja acima da sobreposição */
+}
+
+.imgLM {
+    position: relative;
+    width: 80px;
+    height: auto;
+    left: 264px;
+}
+
+/* Estilo para o contêiner principal que agrupa dias e horários */
+.horario-container {
+    display: flex; /* Torna o contêiner principal um flex container */
+    justify-content:flex-start; /* Adiciona espaço entre os dois contêineres filhos */
+    align-items: flex-start; /* Alinha os itens no topo */
+    margin-top: 20px;
+    margin-left: 72.5px;
+    width: 159px;
+}
+
+/* Estilo para os contêineres de dias e horários */
+.dias-container, .horarios-container {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+}
+
+/* Estilo para os elementos individuais */
+.dias, .horarios {
+    margin: 0;
+    margin-right: 2px;
+    padding: 2px;
+}
