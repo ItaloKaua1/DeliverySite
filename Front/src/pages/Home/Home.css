@@ -1,7 +1,7 @@
 .containerDefault{
     background-color: white;
     width: 789px;
-    height: 100vh; /* Ocupa 100% da altura da janela de visualização */
+    height: 100vh;
     display: flex;
     flex-direction: column; /* Alinha os filhos verticalmente */
     align-items: center; /* Centraliza os elementos dentro da div */

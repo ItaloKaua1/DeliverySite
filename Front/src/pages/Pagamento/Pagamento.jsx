@@ -5,25 +5,25 @@ const Pagamento = () => {
   const [selectedPayment, setSelectedPayment] = useState(null);
 
   const paymentOptions = [
-    { label: "Chave pix", value: "pix", imgSrc: "public/pix.png" },
+    { label: "Chave pix", value: "pix", imgSrc: "/pix.png" },
     {
       label: "Mastercard Crédito",
       value: "mastercard_credit",
-      imgSrc: "public/Mastercard.png",
+      imgSrc: "/Mastercard.png",
     },
     {
       label: "Mastercard Débito",
       value: "mastercard_debit",
-      imgSrc: "public/Mastercard.png",
+      imgSrc: "/Mastercard.png",
     },
-    { label: "Visa Crédito", value: "visa_credit", imgSrc: "public/Visa.png" },
-    { label: "Visa Débito", value: "visa_debit", imgSrc: "public/Visa.png" },
-    { label: "Elo crédito", value: "elo_credit", imgSrc: "public/elo.png" },
-    { label: "Elo débito", value: "elo_debit", imgSrc: "public/elo.png" },
+    { label: "Visa Crédito", value: "visa_credit", imgSrc: "/Visa.png" },
+    { label: "Visa Débito", value: "visa_debit", imgSrc: "/Visa.png" },
+    { label: "Elo crédito", value: "elo_credit", imgSrc: "/elo.png" },
+    { label: "Elo débito", value: "elo_debit", imgSrc: "/elo.png" },
     {
       label: "Hipercard Crédito",
       value: "hipercard_credit",
-      imgSrc: "public/Hipercard.png",
+      imgSrc: "/Hipercard.png",
     },
   ];
 
@@ -31,7 +31,7 @@ const Pagamento = () => {
     <div className="pagamento-container">
       <header className="header">
         <div className="logo-container">
-          <img src="public/Logo_Completa.svg" alt="Logo" className="logo" />
+          <img src="/Logo_Completa.svg" alt="Logo" className="logo" />
         </div>
         <h2>Forma de pagamento:</h2>
       </header>

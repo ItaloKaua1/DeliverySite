@@ -23,7 +23,7 @@ function Menu (){
                 </div>
                 <div className='divOpcao' id="space">
                     <p className='nome'>2 Marmitas + Cocada Caseira + Refri 1L</p>
-                    <p id="preco">R$ 18,50</p>
+                    <p id="preco">R$ 38,50</p>
                     <img src="/Marmita_post.jpg" alt="Marmita" className="imgMenu"/>
                 </div>
             </section>
