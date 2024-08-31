@@ -3,12 +3,17 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home/Home"
+import MontarMarmita from "./pages/MonteSuaMarmita/MontarMarmita"
 
 const router = createBrowserRouter(
   [
     {
       path:"/",
       element: <Home/>,
+    },
+    {
+      path:"/MonteSuaMarmita",
+      element: <MontarMarmita/>
     }
   ]
 )

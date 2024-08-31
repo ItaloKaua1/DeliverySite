@@ -9,31 +9,51 @@ const Modal = ({isOpen, onClose}) => {
     return (
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                <img src="/Logo_Completa.svg" alt="logo" className="imgLM"/>
-                <h3>Horários de Funcionamento</h3>
-                
-                <div class="horario-container">
-                    <div class="dias-container">
-                        <p class="dias">Domingo</p>
-                        <p class="dias">Segunda</p>
-                        <p class="dias">Terça</p>
-                        <p class="dias">Quarta</p>
-                        <p class="dias">Quinta</p>
-                        <p class="dias">Sexta</p>
-                        <p class="dias">Sábado</p>
+                {/* Contêiner da esquerda */}
+                <div className="left-content">
+                    <img src="/Logo_Completa.svg" alt="logo" className="imgLM" />
+
+                    <div className="tituloRelogioContainer">
+                        <img src="/relogio.png" alt="relogio" id="relogio" />
+                        <h3 style={{ color: "#00B536" }} id="tituloHorario">Horários de Funcionamento</h3>
                     </div>
-                    <div class="horarios-container">
-                        <p class="horarios">Fechado</p>
-                        <p class="horarios">10:30 - 14:00</p>
-                        <p class="horarios">10:30 - 14:00</p>
-                        <p class="horarios">10:30 - 14:00</p>
-                        <p class="horarios">10:30 - 14:00</p>
-                        <p class="horarios">10:30 - 14:00</p>
-                        <p class="horarios">10:30 - 14:00</p>
-                    </div>
+
+                    <section className="horario-container">
+                        <div className="dias-container">
+                            <p className="dias">Domingo</p>
+                            <p className="dias">Segunda</p>
+                            <p className="dias">Terça</p>
+                            <p className="dias">Quarta</p>
+                            <p className="dias">Quinta</p>
+                            <p className="dias">Sexta</p>
+                            <p className="dias">Sábado</p>
+                        </div>
+                        <div className="horarios-container">
+                            <p className="horarios" style={{ color: "red" }}>Fechado</p>
+                            <p className="horarios">10:30 - 14:00</p>
+                            <p className="horarios">10:30 - 14:00</p>
+                            <p className="horarios">10:30 - 14:00</p>
+                            <p className="horarios">10:30 - 14:00</p>
+                            <p className="horarios">10:30 - 14:00</p>
+                            <p className="horarios">10:30 - 14:00</p>
+                        </div>
+                    </section>
                 </div>
 
-                <button onClick={onClose}>Fechar</button>
+                {/* Contêiner da direita */}
+                <div className="right-content">
+                    <img 
+                    src="/VectorX.png" 
+                    alt="close" 
+                    id="imgX"
+                    onClick={onClose}
+                    />
+
+                    <div>
+                        <h3 id="tss">Endereço do Estabelecimento:</h3>
+                        <p id="kska">Rua: xxx, 349 - Centro, Quixadá - CE</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -3,9 +3,10 @@
     width: 789px;
     height: 100vh;
     display: flex;
-    flex-direction: column; /* Alinha os filhos verticalmente */
-    align-items: center; /* Centraliza os elementos dentro da div */
-    justify-content: flex-start; /* Alinha os itens ao topo da div */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar a div (opcional) */
-    position: relative; /* Posicionamento padrão */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }

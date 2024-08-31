@@ -5,51 +5,107 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo esmaecido */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1001; /* Certifique-se de que o modal apareça acima de outros elementos */
+    z-index: 1001;
 }
 
 .modal-content {
+    display: flex; /* Adiciona flexbox para alinhar os contêineres */
+    justify-content: space-between; /* Espaça os contêineres à esquerda e à direita */
+    align-items: flex-start; /* Alinha os itens ao topo */
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     max-width: 608px;
-    height: 100%;
     max-height: 362px;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1002; /* Para garantir que o conteúdo do modal esteja acima da sobreposição */
+    z-index: 1002;
 }
+
+.left-content {
+    flex: 1; /* Ocupa o espaço restante à esquerda */
+    background-color: white;
+}
+
+.right-content {
+    flex: 1; /* Define uma largura fixa para o endereço-estabelecimento */
+    background-color: white;
+    padding-left: 0px;
+    height: 362px;
+}
+
+/* Outros estilos mantidos */
 
 .imgLM {
     position: relative;
     width: 80px;
     height: auto;
     left: 264px;
+    margin-bottom: 0;
 }
 
-/* Estilo para o contêiner principal que agrupa dias e horários */
+
 .horario-container {
-    display: flex; /* Torna o contêiner principal um flex container */
-    justify-content:flex-start; /* Adiciona espaço entre os dois contêineres filhos */
-    align-items: flex-start; /* Alinha os itens no topo */
-    margin-top: 20px;
+    display: flex;
+    justify-content:flex-start; 
+    align-items: flex-start;
+    height: 156px;
+    margin-top: 10px;
     margin-left: 72.5px;
     width: 159px;
 }
 
-/* Estilo para os contêineres de dias e horários */
 .dias-container, .horarios-container {
     display: flex;
-    flex-direction: column; /* Alinha os itens verticalmente */
+    flex-direction: column; 
 }
 
-/* Estilo para os elementos individuais */
 .dias, .horarios {
     margin: 0;
     margin-right: 2px;
     padding: 2px;
+}
+
+.tituloRelogioContainer{
+    margin-top:51px;
+    width: 241px;
+    height: 25px;
+    margin-left: 31.5px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#tituloHorario {
+    margin-left: 5px;
+}
+
+.endereco-estabelecimento{
+    width: 235px;
+    height: 0px;
+    position: relative;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#tss{
+    margin: 0;
+    height: 20px;
+    margin-top: 112px;
+    width: 235px;
+    margin-left: 34.5px;
+}
+#kska{
+    margin-left: 34.5px;
+}
+
+#imgX{
+    margin-left: 250px;
+    cursor: pointer;
 }

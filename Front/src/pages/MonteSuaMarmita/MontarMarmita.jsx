@@ -9,7 +9,7 @@ const MontarMarmita = () => {
   return (
     <div className="container-marmita">
       <div className="logo-container">
-        <img src="public/Logo_Completa.svg" alt="Logo" className="logo" />
+        <img src="/Logo_Completa.svg" alt="Logo" className="logo" />
       </div>
       
       <h1>Monte sua marmita</h1>

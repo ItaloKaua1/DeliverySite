@@ -1,16 +1,20 @@
 import "./Menu.css"
+import { Link } from 'react-router-dom';
 
 function Menu (){
     return(
         <>
             {/* Marmita */}
+            
             <section className='divCardapio' id="#divMontar">
                 <p id='titulo'>Marmita</p>
-                <div className='divOpcao'>
-                    <p className='nome'>Monte sua marmita</p>
-                    <p id="preco">R$ 15,00</p>
-                    <img src="/Marmita_post.jpg" alt="Marmita" className="imgMenu"/>
-                </div>
+                <Link to="/MonteSuaMarmita" className="Link">
+                    <div className='divOpcao'>
+                        <p className='nome'>Monte sua marmita</p>
+                        <p id="preco">R$ 15,00</p>
+                        <img src="/Marmita_post.jpg" alt="Marmita" className="imgMenu"/>
+                    </div>
+                </Link>
             </section>
 
             {/* Combos */}
