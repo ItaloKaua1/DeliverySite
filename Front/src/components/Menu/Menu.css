@@ -1,0 +1,111 @@
+.divCardapio {
+    background-color: #f1f1f1;
+    width: 789px;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.Link{
+    text-decoration: none;
+    color: inherit;
+}
+
+#divCombos{
+    margin-top: 0;
+}
+
+#titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.divOpcao {
+    width: 789px;
+    height: 150px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+
+.nome {
+    margin-left: 10px;
+    flex: 1;
+    align-self: baseline;
+}
+
+
+#preco {
+    margin-left: 10px;
+    font-size: bold;
+    flex: 1;
+    align-self: center;
+    justify-content: flex-start;
+    transform: translateX(-103%); 
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.imgMenu {
+    width: 120px;
+    height: auto;
+    flex: 0.6;
+    align-self: center;
+    margin-right: 10px;
+}
+
+#divCombos{
+    height: 370px;
+    border-bottom: 0px;
+}
+
+#space{
+    margin-top: 4px;
+}
+
+#divSobremesas {
+    height: auto;
+    margin-top: 0;
+    border-bottom: 0px;
+}
+
+#imgCocada {
+    width: 120px;
+    height: 100px;
+    flex: 0.6;
+    align-self: center;
+    margin-right: 10px;
+}
+
+#divBebidas {
+    margin-top: 0;
+    height: auto;
+    padding-bottom: 14vh;
+}
+
+#imgSuco {
+    width: 0px;
+    flex: 0.5;
+    align-self: center;
+    margin-right: 32px;
+}
+
+#preco2{
+    margin-left: 10px;
+    font-size: bold;
+    flex: 1;
+    align-self: center;
+    justify-content: flex-start;
+    transform: translateX(-102.5%); 
+    font-weight: bold;
+    margin-bottom: 1px;
+}

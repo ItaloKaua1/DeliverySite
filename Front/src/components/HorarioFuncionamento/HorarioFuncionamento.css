@@ -1,0 +1,44 @@
+#divHorario {
+    position: relative;
+    top: 20px; /* Correção do valor de top */
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    padding-bottom: 25px;
+}
+
+#index {
+    position: relative; /* Remove o posicionamento absoluto */
+    margin-right: 2px; /* Adiciona margem direita */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#statusDiv {
+    background-color: #00B536;
+    position: relative; /* Remove o posicionamento absoluto */
+    max-width: 75px;
+    height: 30px;
+    padding: 5px 10px;
+    display: flex; /* Habilita o flexbox para o #statusDiv */
+    align-items: center; /* Alinha verticalmente o texto */
+    justify-content:center; /* Alinha horizontalmente o texto */
+    border-radius: 10px;
+}
+
+.text {
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#horario {
+    color: #00B536;
+    margin-right: 5px; /* Adiciona margem direita */
+    margin-left: 5px;
+}
