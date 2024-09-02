@@ -1,11 +1,11 @@
-import "./Logo.css"
+// Logo.js
+import React from 'react';
+import './Logo.css';
 
-function Logo () {
-    return(
-        <div>
-            <img src="/Logo_Completa.svg" alt="Logo" className="logoCompleta"/>
-        </div>
-    )
-}
+const Logo = ({ className }) => {
+    return (
+        <img src="Logo_Completa.svg" alt="Logo" className={`logoCompleta ${className}`} />
+    );
+};
 
-export default Logo
+export default Logo;

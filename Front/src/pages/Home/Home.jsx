@@ -24,7 +24,7 @@ const Home = () => {
 
     return (
         <div className='containerDefault' id='divHome'>
-            <Logo />
+            <Logo className= 'logoHome'/>
             <HorarioFuncionamento onClick={handleOpenModal} />
             <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
             <Navbar />
