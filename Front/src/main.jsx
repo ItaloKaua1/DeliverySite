@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home/Home"
 import MontarMarmita from "./pages/MonteSuaMarmita/MontarMarmita"
+import Perfil from "./pages/Perfil/Perfil";
 
 const router = createBrowserRouter(
   [
@@ -13,7 +14,11 @@ const router = createBrowserRouter(
     },
     {
       path:"/MonteSuaMarmita",
-      element: <MontarMarmita/>
+      element: <MontarMarmita/>,
+    },
+    {
+      path:"/Perfil",
+      element: <Perfil />
     }
   ]
 )
