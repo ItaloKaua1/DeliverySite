@@ -1,8 +1,8 @@
 #NavbarDiv {
-    background-color: #ffff;
+    background-color: #ffffff; /* Cor de fundo */
     width: 100%;
     max-width: 789px;
-    height: 11.42vh;
+    height: 60px; /* Altura ajustada para um melhor equilíbrio */
     border-radius: 18px 18px 0 0;
     position: fixed;
     bottom: 0;
@@ -10,11 +10,17 @@
     justify-content: space-around; /* Distribui os itens igualmente */
     align-items: center; /* Centraliza verticalmente */
     padding: 10px 0;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
     z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
 }
 
-.containerItems{
+#NavbarDiv:hover {
+    background-color: #f9f9f9; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais forte ao passar o mouse */
+}
+
+.containerItems {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,25 +28,41 @@
     flex: 1; /* Permite que os itens cresçam de forma igual */
     max-width: 100px; /* Limita a largura máxima de cada item */
     text-align: center;
+    transition: color 0.3s; /* Transição suave na cor do texto */
+    padding-top: 10px;
 }
 
 .img {
-    margin-top: 10px;
-    width: 40px;
+    width: 40px; /* Largura ajustada */
     height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.containerItems:hover .img {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+#textoNav {
+    margin: 5px 0; /* Ajusta a margem em torno do texto */
+    font-size: 0.9rem; /* Tamanho da fonte ajustado */
+    color: #333; /* Cor do texto */
+}
+
+.containerItems:hover #textoNav {
+    color: #007BFF; /* Cor do texto ao passar o mouse */
 }
 
 @media (max-width: 768px) {
     #NavbarDiv {
-        width: 100%;
-        height: auto;
+        height: auto; /* Ajusta a altura para telas menores */
+        padding: 5px 0; /* Ajusta o padding para telas menores */
     }
     
     .img {
-        width: 30px;
+        width: 30px; /* Largura da imagem ajustada */
     }
 
-    .containerItems p {
+    #textoNav {
         font-size: 0.8rem; /* Ajusta o tamanho da fonte para telas menores */
     }
 }
