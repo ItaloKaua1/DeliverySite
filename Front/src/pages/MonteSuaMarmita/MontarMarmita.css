@@ -3,6 +3,7 @@
   padding: 20px;
   width: 789px;
   height: auto;
+  padding-bottom: 80px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -69,5 +70,64 @@ li {
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.confirmContainer {
+  width: calc(100% - 40px);
+  height: 80px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  z-index: 1002;
+  padding: 0 20px;
+  justify-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contador{
+  background-color: rgb(255, 255, 255);
+  width: 114px;
+  height: 45px;
+  border-radius: 10px;
+  border: black solid 1px;
+  margin-left: 25px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+#less{
+  width: 14px;
+  height: 2px;
+  margin-top: 21px;
+}
+
+#idContador{
+  margin-top: 10px;
+}
+
+#plus{
+  width: 14px;
+  height: 14px;
+  margin-top: 15px;
+}
+
+#finalizarButton{
+  background-color: #00B536;
+  width: 242px;
+  position: relative;
+  height: 45px;
+  color: white;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  margin-right: 25px;
   margin-top: 10px;
 }
