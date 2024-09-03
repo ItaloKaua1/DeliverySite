@@ -1,73 +1,103 @@
-import "./Menu.css"
+import React, { useState, useEffect } from 'react';
+import './Menu.css';
 import { Link } from 'react-router-dom';
 
-function Menu (){
-    return(
+function Menu() {
+    const [menuData, setMenuData] = useState({
+        marmitas: [],
+        combos: [],
+        sobremesas: [],
+        bebidas: []
+    });
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const responses = await Promise.all([
+                    fetch("http://localhost:3001/marmitas"),
+                    fetch("http://localhost:3001/combos"),
+                    fetch("http://localhost:3001/sobremesas"),
+                    fetch("http://localhost:3001/bebidas")
+                ]);
+
+                const [marmitas, combos, sobremesas, bebidas] = await Promise.all(responses.map(res => res.json()));
+
+                setMenuData({ marmitas, combos, sobremesas, bebidas });
+            } catch (error) {
+                console.error("Error fetching data:", error);
+                setError(error.message);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
+
+    if (!menuData.marmitas.length && !menuData.combos.length && !menuData.sobremesas.length && !menuData.bebidas.length) {
+        return <div>Loading...</div>;
+    }
+
+    return (
         <>
-            {/* Marmita */}
-            
-            <section className='divCardapio' id="#divMontar">
-                <p id='titulo'>Marmita</p>
-                <Link to="/MonteSuaMarmita" className="Link">
-                    <div className='divOpcao'>
-                        <p className='nome'>Monte sua marmita</p>
-                        <p id="preco">R$ 15,00</p>
-                        <img src="/Marmita_post.jpg" alt="Marmita" className="imgMenu"/>
-                    </div>
-                </Link>
-            </section>
+            {menuData.marmitas.length > 0 && (
+                <section className='divCardapio'>
+                    <p id='titulo'>Marmitas</p>
+                    {menuData.marmitas.map((item) => (
+                        <Link key={item.id} to={item.link} className="Link">
+                            <div className='divOpcao'>
+                                <p className='nome'>{item.nome}</p>
+                                <p id="preco">{item.preco}</p>
+                                <img src={item.imagem} alt={item.nome} className="imgMenu"/>
+                            </div>
+                        </Link>
+                    ))}
+                </section>
+            )}
 
-            {/* Combos */}
-            <section className='divCardapio' id="divCombos">
-                <p id='titulo'>Combos</p>
-                <div className='divOpcao'>
-                    <p className='nome'>Marmita + Refrigerante Lata</p>
-                    <p id="preco">R$ 18,50</p>
-                    <img src="/Marmita_post.jpg" alt="Marmita" className="imgMenu"/>
-                </div>
-                <div className='divOpcao' id="space">
-                    <p className='nome'>2 Marmitas + Cocada Caseira + Refri 1L</p>
-                    <p id="preco">R$ 38,50</p>
-                    <img src="/Marmita_post.jpg" alt="Marmita" className="imgMenu"/>
-                </div>
-            </section>
+            {menuData.combos.length > 0 && (
+                <section className='divCardapio' id="divCombos">
+                    <p id='titulo'>Combos</p>
+                    {menuData.combos.map((item) => (
+                        <div key={item.id} className='divOpcao'>
+                            <p className='nome'>{item.nome}</p>
+                            <p id="preco">{item.preco}</p>
+                            <img src={item.imagem} alt={item.nome} className="imgMenu"/>
+                        </div>
+                    ))}
+                </section>
+            )}
 
-            {/* Sobremas */}
-            <section className='divCardapio' id="divSobremesas">
-                <p id='titulo'>Sobremesas</p>
-                <div className='divOpcao'>
-                    <p className='nome'>Cocada caseira</p>
-                    <p id="preco">R$ 4,50</p>
-                    <img src="/cocada_post.jpeg" alt="Marmita" id="imgCocada"/>
-                </div>
-            </section>
+            {menuData.sobremesas.length > 0 && (
+                <section className='divCardapio' id="divSobremesas">
+                    <p id='titulo'>Sobremesas</p>
+                    {menuData.sobremesas.map((item) => (
+                        <div key={item.id} className='divOpcao'>
+                            <p className='nome'>{item.nome}</p>
+                            <p id="preco">{item.preco}</p>
+                            <img src={item.imagem} alt={item.nome} className="imgMenu"/>
+                        </div>
+                    ))}
+                </section>
+            )}
 
-            {/* Bebidas */}
-            <section className='divCardapio' id="divBebidas">
-                <p id='titulo'>Bebidas</p>
-                <div className='divOpcao'>
-                    <p className='nome'>Refrigerante 1L</p>
-                    <p id="preco">R$ 7,00</p>
-                    <img src="/Refrigerante_1l_post.jpeg" alt="Refri1L" className="imgMenu"/>
-                </div>
-                <div className='divOpcao' id="space">
-                    <p className='nome'>Refrigerante 350ml</p>
-                    <p id="preco">R$ 3,50</p>
-                    <img src="/Refrigerante_mini_post.jpeg" alt="Refri350ml" className="imgMenu"/>
-                </div>
-                <div className='divOpcao' id="space">
-                    <p className='nome'>Refrigerante Lata</p>
-                    <p id="preco">R$ 4,50</p>
-                    <img src="/post_refri_lata" alt="RefriLata" className="imgMenu"/>
-                </div>
-                <div className='divOpcao' id="space">
-                    <p className='nome'>Suco 300ml</p>
-                    <p id="preco2">R$ 3,50</p>
-                    <img src="/Suco_post.jpeg" alt="Suco" id="imgSuco"/>
-                </div>
-            </section>
+            {menuData.bebidas.length > 0 && (
+                <section className='divCardapio' id="divBebidas">
+                    <p id='titulo'>Bebidas</p>
+                    {menuData.bebidas.map((item) => (
+                        <div key={item.id} className='divOpcao'>
+                            <p className='nome'>{item.nome}</p>
+                            <p id={item.preco.includes('R$ 3,50') ? "preco2" : "preco"}>{item.preco}</p>
+                            <img src={item.imagem} alt={item.nome} className="imgMenu"/>
+                        </div>
+                    ))}
+                </section>
+            )}
         </>
-    )
+    );
 }
 
-export default Menu
+export default Menu;
