@@ -1,11 +1,12 @@
 import { useState } from "react"
 import UserButtons from "../../components/UserButtons/UserButtons"
 // import UserInputs from "../UserInputs/UserInputs"
-// import UserItems from "../UserItems/UserItems"
+import UserItems from "../../components/UserItems/UserItems"
 // import Session from "../../services/Session"
 
 import "./Perfil.css"
 import ElipseUser from "../../components/ElipseUser/ElipseUser"
+import Navbar from "../../components/Navbar/Navbar"
 
 const Perfil = () => {
 
@@ -20,9 +21,10 @@ const Perfil = () => {
     return (
         <div id="divUser">
             <ElipseUser />
-            {/* <UserItems name={userName} email={userEmail} password={userPassword}/>
-            <UserInputs name={userName} email={userEmail} password={userPassword}/> */}
+            {/* <UserItems name={userName} email={userEmail} password={userPassword}/> */}
+            {/* <UserInputs name={userName} email={userEmail} password={userPassword}/> */}
             <UserButtons nameButton="Salvar Alteralções" backTo="/home"/>
+            
         </div>
     )
 }
