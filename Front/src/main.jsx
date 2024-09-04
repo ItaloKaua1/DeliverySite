@@ -8,6 +8,7 @@ import MontarMarmita from "./pages/MonteSuaMarmita/MontarMarmita"
 import Perfil from "./pages/Perfil/Perfil";
 import Cadastro from "./pages/Cadastro/Cadastro";
 import Login from "./pages/Login/Login";
+import Sacola from "./pages/Sacola/Sacola";
 
 const router = createBrowserRouter(
   [
@@ -34,6 +35,10 @@ const router = createBrowserRouter(
     {
       path:"/Login",
       element: <Login />,
+    },
+    {
+      path:"/Sacola",
+      element: <Sacola />
     }
   ]
 )

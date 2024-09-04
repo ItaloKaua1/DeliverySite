@@ -111,26 +111,19 @@ li:hover {
 
 .quantidade-container {
   display: flex;
-  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
-.quantity-button {
-  background-color: #3498db;
-  border: none;
-  color: #fff;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  font-size: 25px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.2s ease-in-out;
+#less{
+  width: 14px;
+  height: 2px;
+  margin-top: 21px;
 }
 
-.quantity-button:hover {
-  background-color: #2980b9;
+#idContador{
+  margin-top: 10px;
 }
 
 .quantity-input {

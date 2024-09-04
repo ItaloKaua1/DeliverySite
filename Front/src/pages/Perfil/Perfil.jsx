@@ -24,7 +24,6 @@ const Perfil = () => {
             {/* <UserItems name={userName} email={userEmail} password={userPassword}/> */}
             {/* <UserInputs name={userName} email={userEmail} password={userPassword}/> */}
             <UserButtons nameButton="Salvar Alteralções" backTo="/home"/>
-            
         </div>
     )
 }
