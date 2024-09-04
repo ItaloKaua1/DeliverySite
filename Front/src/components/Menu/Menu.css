@@ -99,3 +99,57 @@
     height: auto;
     padding-bottom: 14vh;
 }
+
+.confirmContainer {
+    width: calc(100% - 40px);
+    height: 80px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 1002;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  
+  .quantidade-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os botões e o input */
+  }
+  
+  .quantity-button {
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    width: 45px; /* Tamanho dos botões */
+    height: 45px; /* Tamanho dos botões */
+    border-radius: 50%;
+    font-size: 22px; /* Tamanho da fonte */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .quantity-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .quantity-input {
+    width: 50px; /* Tamanho do input */
+    height: 40px; /* Tamanho do input */
+    text-align: center;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
