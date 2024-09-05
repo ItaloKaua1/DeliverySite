@@ -5,6 +5,11 @@
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
+
+  .formSection h2 {
+    color: #fff;
+    text-align: center;
+  }
   
   .logoSection {
     background-color: #f3f3f3;
@@ -68,13 +73,20 @@
   }
 
   .buttonSectionCadastro {
-    margin-top: 20px;
+    width: 358px;
+    margin: 20px auto; 
     padding: 15px;
     font-size: 16px;
     color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: block; 
+  }
+  
+  .buttonSectionCadastro:hover {
+    color: white;
+    background-color: #636363;
   }
   
   .formSection button {
