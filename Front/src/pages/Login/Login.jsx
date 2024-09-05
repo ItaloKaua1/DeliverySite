@@ -50,7 +50,6 @@ function Login() {
         />
       </div>
       <div className="formSectionLogin">
-        <h2>Faça o seu login</h2>
         <form onSubmit={handleSubmit}>
           <label htmlFor="email">Email</label>
           <input
