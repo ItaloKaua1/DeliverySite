@@ -1,85 +1,91 @@
 {
-    "users": [
-        {
-            "id": "1",
-            "nome": "João Silva",
-            "email": "joao@example.com",
-            "senha": "senha123"
-        },
-        {
-            "id": "2",
-            "nome": "Maria Oliveira",
-            "email": "maria@example.com",
-            "senha": "senha456"
-        },
-        {
-            "id": "5b0c",
-            "nome": "Vitor",
-            "email": "vitorloula3@gmail.com",
-            "senha": "vls210303"
-        },
-        {
-            "id": "2ebb",
-            "nome": "Pedro",
-            "email": "pedro@gmail.com",
-            "senha": "pedro123"
-        }
-    ],
-    "marmitas": [
-        {
-            "id": 1,
-            "nome": "Monte sua marmita",
-            "preco": "R$ 15,00",
-            "imagem": "/Marmita_post.jpg",
-            "link": "/MonteSuaMarmita"
-        }
-    ],
-    "combos": [
-        {
-            "id": 2,
-            "nome": "Marmita + Refrigerante Lata",
-            "preco": "R$ 18,50",
-            "imagem": "/Marmita_post.jpg"
-        },
-        {
-            "id": 3,
-            "nome": "2 Marmitas + Cocada Caseira + Refri 1L",
-            "preco": "R$ 38,50",
-            "imagem": "/Marmita_post.jpg"
-        }
-    ],
-    "sobremesas": [
-        {
-            "id": 4,
-            "nome": "Cocada caseira",
-            "preco": "R$ 4,50",
-            "imagem": "/cocada_post.jpeg"
-        }
-    ],
-    "bebidas": [
-        {
-            "id": 5,
-            "nome": "Refrigerante 1L",
-            "preco": "R$ 7,00",
-            "imagem": "/Refrigerante_1l_post.jpeg"
-        },
-        {
-            "id": 6,
-            "nome": "Refrigerante 350ml",
-            "preco": "R$ 3,50",
-            "imagem": "/Refrigerante_mini_post.jpeg"
-        },
-        {
-            "id": 7,
-            "nome": "Refrigerante Lata",
-            "preco": "R$ 4,50",
-            "imagem": "/post_refri_lata"
-        },
-        {
-            "id": 8,
-            "nome": "Suco 300ml",
-            "preco": "R$ 3,50",
-            "imagem": "/Suco_post.jpeg"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "email": "joao@example.com",
+      "senha": "senha123"
+    },
+    {
+      "id": "2",
+      "nome": "Maria Oliveira",
+      "email": "maria@example.com",
+      "senha": "senha456"
+    },
+    {
+      "id": "5b0c",
+      "nome": "Vitor",
+      "email": "vitorloula3@gmail.com",
+      "senha": "vls210303"
+    },
+    {
+      "id": "2ebb",
+      "nome": "Pedro",
+      "email": "pedro@gmail.com",
+      "senha": "pedro123"
+    },
+    {
+      "id": "4b18",
+      "nome": "Ítalo Kauã",
+      "email": "italo.kaua.11@gmail.com",
+      "senha": "kaua8707"
+    }
+  ],
+  "marmitas": [
+    {
+      "id": "1",
+      "nome": "Monte sua marmita",
+      "preco": "R$ 15,00",
+      "imagem": "/Marmita_post.jpg",
+      "link": "/MonteSuaMarmita"
+    }
+  ],
+  "combos": [
+    {
+      "id": "2",
+      "nome": "Marmita + Refrigerante Lata",
+      "preco": "R$ 18,50",
+      "imagem": "/Marmita_post.jpg"
+    },
+    {
+      "id": "3",
+      "nome": "2 Marmitas + Cocada Caseira + Refri 1L",
+      "preco": "R$ 38,50",
+      "imagem": "/Marmita_post.jpg"
+    }
+  ],
+  "sobremesas": [
+    {
+      "id": "4",
+      "nome": "Cocada caseira",
+      "preco": "R$ 4,50",
+      "imagem": "/cocada_post.jpeg"
+    }
+  ],
+  "bebidas": [
+    {
+      "id": "5",
+      "nome": "Refrigerante 1L",
+      "preco": "R$ 7,00",
+      "imagem": "/Refrigerante_1l_post.jpeg"
+    },
+    {
+      "id": "6",
+      "nome": "Refrigerante 350ml",
+      "preco": "R$ 3,50",
+      "imagem": "/Refrigerante_mini_post.jpeg"
+    },
+    {
+      "id": "7",
+      "nome": "Refrigerante Lata",
+      "preco": "R$ 4,50",
+      "imagem": "/post_refri_lata"
+    },
+    {
+      "id": "8",
+      "nome": "Suco 300ml",
+      "preco": "R$ 3,50",
+      "imagem": "/Suco_post.jpeg"
+    }
+  ]
 }

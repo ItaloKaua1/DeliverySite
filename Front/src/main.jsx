@@ -9,6 +9,7 @@ import Perfil from "./pages/Perfil/Perfil";
 import Cadastro from "./pages/Cadastro/Cadastro";
 import Login from "./pages/Login/Login";
 import Sacola from "./pages/Sacola/Sacola";
+import Pedidos from "./pages/Pedidos/Pedidos";
 
 const router = createBrowserRouter(
   [
@@ -39,6 +40,10 @@ const router = createBrowserRouter(
     {
       path:"/Sacola",
       element: <Sacola />
+    },
+    {
+      path:"/Pedidos",
+      element: <Pedidos />
     }
   ]
 )

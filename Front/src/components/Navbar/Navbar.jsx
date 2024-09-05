@@ -51,12 +51,14 @@ const Navbar = () => {
           <strong>Sacola</strong>
         </p>
       </div>
-      <div className="containerItems" id="pedidos" onClick={handlePedidosClick}>
-        <img src={pedidosCheio ? '/pedidosCheio.svg' : '/Pedidos.svg'} alt="Pedidos" className="img" />
-        <p id="textoNav">
-          <strong>Pedidos</strong>
-        </p>
-      </div>
+      <Link to="/Pedidos" className="Link">
+        <div className="containerItems" id="pedidos" onClick={handlePedidosClick}>
+          <img src={pedidosCheio ? '/pedidosCheio.svg' : '/Pedidos.svg'} alt="Pedidos" className="img" />
+          <p id="textoNav">
+            <strong>Pedidos</strong>
+          </p>
+        </div>
+      </Link>
       {/* <Link to="/Perfil" className="Link"> */}
         <div className="containerItems" id="perfil" onClick={handlePerfilClick}>
           <img src={perfilCheio ? '/perfilCheio.svg' : '/perfil.svg'} alt="Perfil" className="img" />
