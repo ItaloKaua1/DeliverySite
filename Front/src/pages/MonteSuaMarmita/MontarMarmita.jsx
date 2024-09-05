@@ -1,76 +1,182 @@
 import "./MontarMarmita.css";
+import React, { useState } from "react";
 
-import React, { useState, useContext } from "react";
-import { MontarContexto } from "./MontarContexto";
+const MAX_CARNES = 2;
+const MAX_GUARNICOES = 5;
+const MAX_SALADAS = 2;
+
+const EscolhaOpcao = ({
+  titulo,
+  opcoes,
+  maxOpcoes,
+  selecionadas,
+  setSelecionadas,
+}) => {
+  const handleAdicionar = (opcao) => {
+    if (selecionadas.length < maxOpcoes && !selecionadas.includes(opcao)) {
+      setSelecionadas([...selecionadas, opcao]);
+    }
+  };
+
+  const handleRemover = (opcao) => {
+    setSelecionadas(selecionadas.filter((item) => item !== opcao));
+  };
+
+  return (
+    <section className={`escolha-${titulo.toLowerCase()}`}>
+      <h2>Escolha sua {titulo}:</h2>
+      <p className="max-opcoes">Máximo {maxOpcoes} opções</p>
+      <ul>
+        {opcoes.map((opcao, index) => (
+          <li key={index}>
+            {opcao}
+            {!selecionadas.includes(opcao) ? (
+              <button
+                className="add-button"
+                onClick={() => handleAdicionar(opcao)}
+                aria-label={`Adicionar ${opcao}`}
+              >
+                +
+              </button>
+            ) : (
+              <button
+                className="remove-button"
+                onClick={() => handleRemover(opcao)}
+                aria-label={`Remover ${opcao}`}
+              >
+                -
+              </button>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+};
+
+const ResumoMarmita = ({
+  carnesEscolhidas,
+  guarnicoesEscolhidas,
+  saladasEscolhidas,
+}) => {
+  return (
+    <section className="resumo-marmita">
+      <h2>Resumo da sua marmita:</h2>
+      <p>
+        <strong>Carnes:</strong>{" "}
+        {carnesEscolhidas.length > 0
+          ? carnesEscolhidas.join(", ")
+          : "Nenhuma selecionada"}
+      </p>
+      <p>
+        <strong>Guarnições:</strong>{" "}
+        {guarnicoesEscolhidas.length > 0
+          ? guarnicoesEscolhidas.join(", ")
+          : "Nenhuma selecionada"}
+      </p>
+      <p>
+        <strong>Saladas:</strong>{" "}
+        {saladasEscolhidas.length > 0
+          ? saladasEscolhidas.join(", ")
+          : "Nenhuma selecionada"}
+      </p>
+    </section>
+  );
+};
 
 const MontarMarmita = () => {
-  const carnes = ["Bife acebolado", "Bife de fígado", "Frango ao molho", "Porco assado no forno", "Tilápia frita"];
-  const guarnicoes = ["Arroz à grega", "Arroz branco", "Baião", "Macarrão", "Feijão carioca", "Feijão de corda", "Cuscuz", "Farofa", "Batata doce"];
+  const carnes = [
+    "Bife acebolado",
+    "Bife de fígado",
+    "Frango ao molho",
+    "Porco assado no forno",
+    "Tilápia frita",
+  ];
+  const guarnicoes = [
+    "Arroz à grega",
+    "Arroz branco",
+    "Baião",
+    "Macarrão",
+    "Feijão carioca",
+    "Feijão de corda",
+    "Cuscuz",
+    "Farofa",
+    "Batata doce",
+  ];
   const saladas = ["Salada cozida", "Vinagrete"];
 
-  const [id, setId] = useState(1)
+  const [carnesEscolhidas, setCarnesEscolhidas] = useState([]);
+  const [guarnicoesEscolhidas, setGuarnicoesEscolhidas] = useState([]);
+  const [saladasEscolhidas, setSaladasEscolhidas] = useState([]);
+  const [quantidade, setQuantidade] = useState(1);
 
   return (
     <div className="container-marmita">
       <div className="logo-container">
         <img src="/Logo_Completa.svg" alt="Logo" className="logo" />
       </div>
-      
+
       <h1>Monte sua marmita</h1>
 
-      <section className="escolha-carnes">
-        <h2>Escolha sua carne:</h2>
-        <p className="max-opcoes">Máximo 02 opções</p>
-        <ul>
-          {carnes.map((carne, index) => (
-            <li key={index}>
-              {carne}
-              <button className="add-button">+</button>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <EscolhaOpcao
+        titulo="carne"
+        opcoes={carnes}
+        maxOpcoes={MAX_CARNES}
+        selecionadas={carnesEscolhidas}
+        setSelecionadas={setCarnesEscolhidas}
+      />
+      <EscolhaOpcao
+        titulo="guarnição"
+        opcoes={guarnicoes}
+        maxOpcoes={MAX_GUARNICOES}
+        selecionadas={guarnicoesEscolhidas}
+        setSelecionadas={setGuarnicoesEscolhidas}
+      />
+      <EscolhaOpcao
+        titulo="salada"
+        opcoes={saladas}
+        maxOpcoes={MAX_SALADAS}
+        selecionadas={saladasEscolhidas}
+        setSelecionadas={setSaladasEscolhidas}
+      />
 
-      <section className="escolha-guarnicoes">
-        <h2>Escolha suas guarnições:</h2>
-        <p className="max-opcoes">Máximo 05 opções</p>
-        <ul>
-          {guarnicoes.map((guarnicao, index) => (
-            <li key={index}>
-              {guarnicao}
-              <button className="add-button">+</button>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="escolha-saladas">
-        <h2>Escolha sua salada:</h2>
-        <p className="max-opcoes">Máximo 02 opções</p>
-        <ul>
-          {saladas.map((salada, index) => (
-            <li key={index}>
-              {salada}
-              <button className="add-button">+</button>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <ResumoMarmita
+        carnesEscolhidas={carnesEscolhidas}
+        guarnicoesEscolhidas={guarnicoesEscolhidas}
+        saladasEscolhidas={saladasEscolhidas}
+      />
 
       <section className="observacoes">
-        <label htmlFor="observacao">Alguma observação?</label>
-        <textarea id="observacaoCampo" placeholder="Escreva aqui..."></textarea>
+        <label htmlFor="observacaoCampo">Alguma observação?</label>
+        <textarea
+          id="observacaoCampo"
+          placeholder="Escreva aqui..."
+          aria-label="Campo de observações"
+        ></textarea>
       </section>
 
       <section className="confirmContainer">
-          <div id="contador">
-            <img src="/Less.png" alt="less" id="less" onClick={() => setId(id > 0 ? id - 1 : 0)} />
-            <span id="idContador">{id}</span>
-            <img src="/Plus.png" alt="plus" id="plus" onClick={() => {setId(id + 1)}}/>
-          </div>
-          <button id="finalizarButton">Adicionar R$ 15,00</button>
+        <div className="quantidade-container">
+          <button
+            className="quantity-button"
+            onClick={() => setQuantidade(quantidade > 1 ? quantidade - 1 : 1)}
+            aria-label="Diminuir quantidade"
+          >
+            -
+          </button>
+          <span className="quantity-input">{quantidade}</span>
+          <button
+            className="quantity-button"
+            onClick={() => setQuantidade(quantidade + 1)}
+            aria-label="Aumentar quantidade"
+          >
+            +
+          </button>
+        </div>
+        <button id="finalizarButton">
+          Adicionar R$ {(quantidade * 15).toFixed(2)}
+        </button>
       </section>
-
     </div>
   );
 };
