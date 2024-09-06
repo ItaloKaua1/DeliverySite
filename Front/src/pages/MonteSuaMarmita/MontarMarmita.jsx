@@ -1,3 +1,4 @@
+import Back from "../../components/Back/Back";
 import "./MontarMarmita.css";
 import React, { useState } from "react";
 
@@ -112,6 +113,7 @@ const MontarMarmita = () => {
 
   return (
     <div className="container-marmita">
+      <Back />
       <div className="logo-container">
         <img src="/Logo_Completa.svg" alt="Logo" className="logo" />
       </div>

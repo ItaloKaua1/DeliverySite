@@ -19,11 +19,12 @@ const Perfil = () => {
     // const userPassword = Session.getInstance().user.password
 
     return (
-        <div id="divUser">
+        <div className="containerDefault">
             <ElipseUser />
             {/* <UserItems name={userName} email={userEmail} password={userPassword}/> */}
             {/* <UserInputs name={userName} email={userEmail} password={userPassword}/> */}
             <UserButtons nameButton="Salvar Alteralções" backTo="/home"/>
+            <Navbar />
         </div>
     )
 }
