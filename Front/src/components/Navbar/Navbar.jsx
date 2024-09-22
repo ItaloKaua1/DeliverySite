@@ -37,7 +37,7 @@ const Navbar = () => {
         setPerfilCheio(true);
         break;
       default:
-        setCardapioCheio(false);
+        setCardapioCheio(true);
         setSacolaCheia(false);
         setPedidosCheio(false);
         setPerfilCheio(false);
