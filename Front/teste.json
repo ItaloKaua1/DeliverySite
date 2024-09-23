@@ -36,8 +36,8 @@
       "id": "1",
       "nome": "Monte sua marmita",
       "preco": "R$ 15,00",
-      "imagem": "/Marmita_post.jpg",
-      "link": "/MonteSuaMarmita"
+      "imagem": "/MonteSuaMarmita.png",
+      "link": "/MonteSuaMarmita.png"
     }
   ],
   "combos": [
@@ -45,13 +45,13 @@
       "id": "2",
       "nome": "Marmita + Refrigerante Lata",
       "preco": "R$ 18,50",
-      "imagem": "/Marmita_post.jpg"
+      "imagem": "/ComboLataMarmita.png"
     },
     {
       "id": "3",
       "nome": "2 Marmitas + Cocada Caseira + Refri 1L",
-      "preco": "R$ 38,50",
-      "imagem": "/Marmita_post.jpg"
+      "preco": "R$ 38,50", 
+      "imagem": "/marmitacombo3.png"
     }
   ],
   "sobremesas": [
