@@ -116,15 +116,15 @@
     justify-content: space-between;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-  }
-  
-  .quantidade-container {
+}
+
+.quantidade-container {
     display: flex;
     align-items: center;
     gap: 15px; /* Espaçamento entre os botões e o input */
-  }
-  
-  .quantity-button {
+}
+
+.quantity-button {
     background-color: #3498db;
     border: none;
     color: #fff;
@@ -137,13 +137,13 @@
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease-in-out;
-  }
-  
-  .quantity-button:hover {
+}
+
+.quantity-button:hover {
     background-color: #2980b9;
-  }
-  
-  .quantity-input {
+}
+
+.quantity-input {
     width: 50px; /* Tamanho do input */
     height: 40px; /* Tamanho do input */
     text-align: center;
@@ -151,5 +151,4 @@
     border-radius: 5px;
     font-size: 20px; /* Tamanho da fonte */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
+}

@@ -3,71 +3,60 @@ import "./Navbar.css";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [cardapioCheio, setCardapioCheio] = useState(true)
-  const [sacolaCheia, setSacolaCheia] = useState(false)
-  const [pedidosCheio, setPedidosCheio] = useState(false)
-  const [perfilCheio, setPerfilCheio] = useState(false)
+  const [activeIcon, setActiveIcon] = useState("cardapio"); // Estado único para controlar o ícone ativo
 
-  const handleCardapioClick = () => {
-    setCardapioCheio(true)
-    setPedidosCheio(false)
-    setPerfilCheio(false)
-    setSacolaCheia(false)
-  }
-
-  const handleSacolaClick = () => {
-    setSacolaCheia(true)
-    setCardapioCheio(false)
-    setPedidosCheio(false)
-    setPerfilCheio(false)
-  }
-
-  const handlePedidosClick = () => {
-    setPedidosCheio(true)
-    setCardapioCheio(false)
-    setSacolaCheia(false)
-    setPerfilCheio(false)
-  }
-
-  const handlePerfilClick = () => {
-    setPerfilCheio(true)
-    setCardapioCheio(false)
-    setSacolaCheia(false)
-    setPedidosCheio(false)
-  }
+  const handleIconClick = (iconName) => {
+    setActiveIcon(iconName); // Atualiza o ícone ativo
+  };
 
   return (
     <div id="NavbarDiv">
-      <Link to="/Home" className="Link">
-        <div className="containerItems" id="cardapio" onClick={handleCardapioClick}>
-          <img src={cardapioCheio ? '/Cardapio_vector.svg' : '/cardapioVazio.png'} alt="Cardápio" className="img" />
+      <Link to="/Home" className="Link" onClick={() => handleIconClick("cardapio")}>
+        <div className="containerItems" id="cardapio">
+          <img
+            src={activeIcon === "cardapio" ? '/Cardapio_vector.svg' : '/cardapioVazio.png'}
+            alt="Cardápio"
+            className="img"
+          />
           <p id="textoNav">
             <strong>Cardápio</strong>
           </p>
         </div>
       </Link>
 
-      <Link to="/Sacola" className="Link">
-        <div className="containerItems" id="sacola" onClick={handleSacolaClick}>
-          <img src={sacolaCheia ? '/sacola-preenchida.svg' : '/Sacola.svg'} alt="Sacola" className="img" />
+      <Link to="/Sacola" className="Link" onClick={() => handleIconClick("sacola")}>
+        <div className="containerItems" id="sacola">
+          <img
+            src={activeIcon === "sacola" ? '/sacola-preenchida.svg' : '/Sacola.svg'}
+            alt="Sacola"
+            className="img"
+          />
           <p id="textoNav">
             <strong>Sacola</strong>
           </p>
         </div>
-        </Link>
+      </Link>
 
-      <Link to="/Pedidos" className="Link">
-        <div className="containerItems" id="pedidos" onClick={handlePedidosClick}>
-          <img src={pedidosCheio ? '/pedidosCheio.svg' : '/Pedidos.svg'} alt="Pedidos" className="img" />
+      <Link to="/Pedidos" className="Link" onClick={() => handleIconClick("pedidos")}>
+        <div className="containerItems" id="pedidos">
+          <img
+            src={activeIcon === "pedidos" ? '/pedidosCheio.svg' : '/Pedidos.svg'}
+            alt="Pedidos"
+            className="img"
+          />
           <p id="textoNav">
             <strong>Pedidos</strong>
           </p>
         </div>
       </Link>
 
-      <Link to="/Perfil" className="Link">
-        <div className="containerItems" id="perfil" onClick={handlePerfilClick}>
-          <img src={perfilCheio ? '/perfilCheio.svg' : '/perfil.svg'} alt="Perfil" className="img" />
+      <Link to="/Perfil" className="Link" onClick={() => handleIconClick("perfil")}>
+        <div className="containerItems" id="perfil">
+          <img
+            src={activeIcon === "perfil" ? '/perfilCheio.svg' : '/perfil.svg'}
+            alt="Perfil"
+            className="img"
+          />
           <p id="textoNav">
             <strong>Perfil</strong>
           </p>

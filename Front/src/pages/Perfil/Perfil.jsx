@@ -19,7 +19,7 @@ const Perfil = () => {
     // const userPassword = Session.getInstance().user.password
 
     return (
-        <div className="containerDefault">
+        <div className="containerDefault" id="perfilContainer">
             <ElipseUser />
             {/* <UserItems name={userName} email={userEmail} password={userPassword}/> */}
             {/* <UserInputs name={userName} email={userEmail} password={userPassword}/> */}
