@@ -36,7 +36,6 @@ const Navbar = () => {
           </p>
         </div>
       </Link>
-      </Link>
 
       <Link to="/Pedidos" className="Link" onClick={() => handleIconClick("pedidos")}>
         <div className="containerItems" id="pedidos">
