@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [activeIcon, setActiveIcon] = useState("cardapio"); // Estado único para controlar o ícone ativo
@@ -35,6 +35,7 @@ const Navbar = () => {
             <strong>Sacola</strong>
           </p>
         </div>
+      </Link>
       </Link>
 
       <Link to="/Pedidos" className="Link" onClick={() => handleIconClick("pedidos")}>
