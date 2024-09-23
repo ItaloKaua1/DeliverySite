@@ -6,6 +6,38 @@ const MAX_CARNES = 2;
 const MAX_GUARNICOES = 5;
 const MAX_SALADAS = 2;
 
+const SalvarItemPedido = () => {
+  // Função que salva o item no 
+  const tipo = 'Marmita';
+  const carnesEscolhidas = document.querySelector('.resumo-marmita p:nth-child(2)').innerText.split(': ')[1];
+  const guarnicoesEscolhidas = document.querySelector('.resumo-marmita p:nth-child(3)').innerText.split(': ')[1];
+  const saladasEscolhidas = document.querySelector('.resumo-marmita p:nth-child(4)').innerText.split(': ')[1];
+  const observacoes = document.getElementById('observacaoCampo').value;
+
+  const pedido = {
+    tipo,
+    carnesEscolhidas,
+    guarnicoesEscolhidas,
+    saladasEscolhidas,
+    observacoes,
+  };
+
+  fetch('http://localhost:3001/Pedidos', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(pedido),
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Pedido salvo com sucesso:', data);
+    })
+    .catch(error => {
+      console.error('Erro ao salvar o pedido:', error);
+    });
+};
+
 const EscolhaOpcao = ({
   titulo,
   opcoes,
@@ -175,7 +207,7 @@ const MontarMarmita = () => {
             +
           </button>
         </div>
-        <button id="finalizarButton">
+        <button id="finalizarButton" onClick={SalvarItemPedido}>
           Adicionar R$ {(quantidade * 15).toFixed(2)}
         </button>
       </section>

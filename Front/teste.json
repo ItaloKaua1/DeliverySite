@@ -87,5 +87,23 @@
       "preco": "R$ 3,50",
       "imagem": "/Suco_post.jpeg"
     }
+  ],
+  "Pedidos": [
+    {
+      "id": "fd51",
+      "tipo": "Marmita",
+      "carnesEscolhidas": "Bife acebolado, Bife de fígado",
+      "guarnicoesEscolhidas": "Arroz à grega, Cuscuz, Feijão de corda, Feijão carioca, Macarrão",
+      "saladasEscolhidas": "Salada cozida, Vinagrete",
+      "observacoes": "tearser"
+    },
+    {
+      "id": "98e8",
+      "tipo": "Marmita",
+      "carnesEscolhidas": "Bife acebolado, Bife de fígado",
+      "guarnicoesEscolhidas": "Arroz à grega, Cuscuz, Feijão de corda, Feijão carioca, Macarrão",
+      "saladasEscolhidas": "Salada cozida, Vinagrete",
+      "observacoes": "tearser"
+    }
   ]
 }
