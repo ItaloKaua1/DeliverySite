@@ -1,6 +1,7 @@
 import Back from "../../components/Back/Back";
 import "./MontarMarmita.css";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Importar useNavigate
 
 const MAX_CARNES = 2;
 const MAX_GUARNICOES = 5;
@@ -111,6 +112,19 @@ const MontarMarmita = () => {
   const [saladasEscolhidas, setSaladasEscolhidas] = useState([]);
   const [quantidade, setQuantidade] = useState(1);
 
+  const navigate = useNavigate(); // Inicializar o hook useNavigate
+
+  // Função para finalizar a montagem da marmita e ir para a sacola
+  const handleFinalizar = () => {
+    const pedido = {
+      carnesEscolhidas,
+      guarnicoesEscolhidas,
+      saladasEscolhidas,
+      quantidade,
+    };
+    navigate("/sacola", { state: pedido }); // Redirecionar para Sacola com os dados
+  };
+
   return (
     <div className="container-marmita">
       <Back />
@@ -175,7 +189,7 @@ const MontarMarmita = () => {
             +
           </button>
         </div>
-        <button id="finalizarButton">
+        <button id="finalizarButton" onClick={handleFinalizar}>
           Adicionar R$ {(quantidade * 15).toFixed(2)}
         </button>
       </section>

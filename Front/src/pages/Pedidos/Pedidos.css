@@ -1,0 +1,50 @@
+.containerDefaultPedidos {
+    display: flex;
+    background-color: white;
+    width: 789px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px;
+}
+
+.pedidos-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens na tela */
+    width: 100%;
+}
+
+.pedido-card {
+    background-color: #fff; /* Fundo branco para os itens do pedido */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px; /* Espaçamento interno */
+    margin: 10px 0; /* Espaçamento entre os itens */
+    width: 100%; /* Largura total do contêiner */
+    max-width: 600px; /* Largura máxima */
+}
+
+.pedido-card p {
+    margin: 5px 0; /* Margem em torno dos parágrafos */
+}
+
+.pedido-card strong {
+    color: #555; /* Cor do texto em negrito */
+}
+
+.navbar {
+    margin-top: 20px; /* Espaçamento acima da navbar */
+    width: 100%;
+}

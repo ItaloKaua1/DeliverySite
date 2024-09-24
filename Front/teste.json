@@ -88,7 +88,130 @@
       "imagem": "/Suco_post.jpeg"
     }
   ],
-  "pedidos":[
-    {}
+  "pedidos": [
+    {
+      "id": 1,
+      "carnes": [
+        "Frango",
+        "Carne de Sol"
+      ],
+      "guarnicoes": [
+        "Arroz",
+        "Batata Frita"
+      ],
+      "saladas": [
+        "Alface",
+        "Tomate"
+      ],
+      "quantidade": 2,
+      "opcaoEntrega": "Delivery"
+    },
+    {
+      "id": "c6b0",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Arroz branco",
+        "Baião",
+        "Macarrão",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "fb9f",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Arroz branco",
+        "Baião",
+        "Macarrão",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "bff9",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Arroz branco",
+        "Baião",
+        "Macarrão",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "2cdf",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Arroz branco",
+        "Baião",
+        "Macarrão",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "633f",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Arroz branco",
+        "Baião",
+        "Macarrão",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "f56a",
+      "carnesEscolhidas": [
+        "Bife de fígado",
+        "Frango ao molho"
+      ],
+      "guarnicoesEscolhidas": [
+        "Feijão carioca",
+        "Feijão de corda",
+        "Macarrão"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    }
   ]
 }
