@@ -10,7 +10,7 @@
 #nameUser, #emailUser, #passwordUser{
     position: relative;
     display: flex;
-    width: 588px;
+    width: 500px;
     height: 38px;
     align-items: center;
     left: 50%;
@@ -44,6 +44,10 @@
     position: relative;
     display: flex;
     font-size: 2.34vh;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateX(-250px); /* Alinha os labels à esquerda dos inputs*/
 }
 
 #nameU{

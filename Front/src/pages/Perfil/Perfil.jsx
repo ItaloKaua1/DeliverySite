@@ -10,18 +10,9 @@ import UserInputs from "../../components/UserInputs/UserInputs"
 
 const Perfil = () => {
 
-    // const [name, setName] = useState("")
-    // const [email, setEmail] = useState("")
-    // const [password, setPassword] = useState("")
-
-    // const userName = Session.getInstance().user.name
-    // const userEmail = Session.getInstance().user.email
-    // const userPassword = Session.getInstance().user.password
-
     return (
         <div className="containerDefault" id="perfilContainer">
             <ElipseUser />
-            {/* <UserItems name={userName} email={userEmail} password={userPassword}/> */}
             <UserInputs /> 
 
             <label id="profileLB"><strong>Perfil</strong></label>

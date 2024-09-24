@@ -121,8 +121,8 @@ const Sacola = () => {
         </div>
 
         {/* Botão para finalizar pedido */}
-        <button 
-          className="finalizar-pedido-button" 
+        <button
+          className="finalizar-pedido-button"
           onClick={handleFinalizarPedido}
         >
           Finalizar Pedido
