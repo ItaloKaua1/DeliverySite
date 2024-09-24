@@ -9,6 +9,8 @@ import SearchBar from '../../components/SearchBar/SearchBar'
 import React, { useState } from 'react'
 import './Home.css'
 
+
+//home sem bug
 const Home = () => {
     const items = ["Marmita", "Combos", "Sobremesas", "Bebidas"]
 
