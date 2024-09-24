@@ -1,3 +1,4 @@
+// Menu.js
 import React, { useState, useEffect } from "react";
 import "./Menu.css";
 import { Link } from "react-router-dom";
@@ -7,6 +8,7 @@ import {
   getSobremesas,
   getBebidas,
 } from "../../api/menu";
+import SearchBar from "../SearchBar/SearchBar"; // Importe a SearchBar
 
 function Menu() {
   const [menuData, setMenuData] = useState({
@@ -16,6 +18,7 @@ function Menu() {
     bebidas: [],
   });
   const [error, setError] = useState(null);
+  const [searchTerm, setSearchTerm] = useState(''); // Adiciona o estado para termo de busca
 
   useEffect(() => {
     const fetchData = async () => {
@@ -42,9 +45,18 @@ function Menu() {
     return <div>Loading...</div>;
   }
 
+  // Filtro para exibir as seções conforme o termo de busca
+  const shouldShowSection = (sectionName) => {
+    if (!searchTerm) return true; // Se não houver termo, mostrar todas as seções
+    return sectionName.toLowerCase().includes(searchTerm.toLowerCase());
+  };
+
   return (
     <>
-      {menuData.marmitas.length > 0 && (
+      {/* Adiciona a barra de pesquisa */}
+      <SearchBar setSearchTerm={setSearchTerm} />
+
+      {shouldShowSection("marmitas") && menuData.marmitas.length > 0 && (
         <section className="divCardapio">
           <p id="titulo">Marmitas</p>
           {menuData.marmitas.map((item) => (
@@ -59,7 +71,7 @@ function Menu() {
         </section>
       )}
 
-      {menuData.combos.length > 0 && (
+      {shouldShowSection("combos") && menuData.combos.length > 0 && (
         <section className="divCardapio" id="divCombos">
           <p id="titulo">Combos</p>
           {menuData.combos.map((item) => (
@@ -72,7 +84,7 @@ function Menu() {
         </section>
       )}
 
-      {menuData.sobremesas.length > 0 && (
+      {shouldShowSection("sobremesas") && menuData.sobremesas.length > 0 && (
         <section className="divCardapio" id="divSobremesas">
           <p id="titulo">Sobremesas</p>
           {menuData.sobremesas.map((item) => (
@@ -85,7 +97,7 @@ function Menu() {
         </section>
       )}
 
-      {menuData.bebidas.length > 0 && (
+      {shouldShowSection("bebidas") && menuData.bebidas.length > 0 && (
         <section className="divCardapio" id="divBebidas">
           <p id="titulo">Bebidas</p>
           {menuData.bebidas.map((item) => (

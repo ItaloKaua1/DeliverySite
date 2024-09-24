@@ -32,7 +32,6 @@ const Home = () => {
             <HorarioFuncionamento onClick={handleOpenModal} />
             <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
             <Navbar />
-            <SearchBar items={items}/>
             <Menu />
         </div>
     )
