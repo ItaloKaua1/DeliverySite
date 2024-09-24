@@ -28,6 +28,27 @@
     margin-left: -10px;
 }
 
+.password-container{
+    position: relative; /* Importante para o ícone absoluto */
+    width: 510px;       /* Largura total */
+    height: 38px;       /* Altura do campo */
+    margin: 0 auto;     /* Centraliza o contêiner */
+    display: flex;
+    align-items: center;
+    border-radius: 1.5cqmin;
+    top: 64vh;
+}
+
+.toggle-password-icon {
+    position: absolute;
+    right: 15px;         /* Distância do lado direito do input */
+    top: 50%;            /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    width: 24px;         /* Tamanho do ícone */
+    height: 24px;
+    cursor: pointer;     /* Muda o cursor ao passar sobre o ícone */
+}
+
 #nameUser{
     top: 47vh;
 }
@@ -37,7 +58,11 @@
 }
 
 #passwordUser{
-    top: 64vh;
+    width: 100%;         /* O input ocupa todo o espaço */
+    height: 100%;        /* Altura igual ao contêiner */
+    padding-right: 40px; /* Espaço para o ícone à direita */
+    border: solid black 1.5px;      /* Remove a borda padrão do input */
+    font-size: 2.5vh;  
 }
 
 #nameU, #emailU, #passwordU{
