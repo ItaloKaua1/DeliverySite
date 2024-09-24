@@ -19,7 +19,7 @@
 
 /* Título da seção */
 #titulo {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     margin-left: 10px;
 }
@@ -42,23 +42,28 @@
 
 /* Nome do item no cardápio */
 .nome {
-    margin-left: 10px;
     flex: 1;
     align-self: baseline;
+    margin-top: 20px;
+    margin-left: 0;
+    font-size: 18px;
 }
 
 /* Preço dos itens no cardápio */
-#preco, #preco2 {
+#preco, #preco2, #precoC {
     margin-left: 10px;
     font-weight: bold;
     flex: 1;
     align-self: center;
     justify-content: flex-start;
+    font-size: 2.4vh;
 }
 
 /* Ajustes específicos para o preço */
 #preco {
     transform: translateX(-103%);
+    margin-top: 15px;
+    font-size: 2.4vh;
 }
 
 #preco2 {

@@ -90,7 +90,7 @@
   ],
   "pedidos": [
     {
-      "id": 1,
+      "id": "1",
       "carnes": [
         "Frango",
         "Carne de Sol"
@@ -212,6 +212,31 @@
       ],
       "quantidade": 1,
       "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "1b2a",
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "83bc",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Baião",
+        "Arroz branco",
+        "Arroz à grega"
+      ],
+      "saladasEscolhidas": [],
+      "quantidade": 1,
+      "opcaoEntrega": "delivery"
+    },
+    {
+      "id": "07b2",
+      "quantidade": 1,
+      "opcaoEntrega": "delivery"
     }
   ]
 }
