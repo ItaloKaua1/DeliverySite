@@ -50,7 +50,7 @@
     {
       "id": "3",
       "nome": "2 Marmitas + Cocada Caseira + Refri 1L",
-      "preco": "R$ 38,50", 
+      "preco": "R$ 38,50",
       "imagem": "/marmitacombo3.png"
     }
   ],
@@ -87,5 +87,8 @@
       "preco": "R$ 3,50",
       "imagem": "/Suco_post.jpeg"
     }
+  ],
+  "pedidos":[
+    {}
   ]
 }

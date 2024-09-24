@@ -1,0 +1,59 @@
+#divUserI{
+    position: absolute;
+    width: 38vw;
+    height: 90vh;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#nameUser, #emailUser, #passwordUser{
+    position: relative;
+    display: flex;
+    width: 588px;
+    height: 38px;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.3vh;
+    border-radius: 1.5cqmin;
+    border-style: hidden;
+    outline: none;
+    padding: 10px;
+    font-size: 2.5vh;
+    max-width: 588px;
+    border: solid black 1.5px;
+    margin: 0px;
+    margin-left: -10px;
+}
+
+#nameUser{
+    top: 47vh;
+}
+
+#emailUser{
+    top: 59vh;
+}
+
+#passwordUser{
+    top: 64vh;
+}
+
+#nameU, #emailU, #passwordU{
+    position: relative;
+    display: flex;
+    font-size: 2.34vh;
+}
+
+#nameU{
+    top: 45vh;
+}
+
+#emailU{
+    top: 57vh;
+}
+
+#passwordU{
+    top: 62vh;
+}

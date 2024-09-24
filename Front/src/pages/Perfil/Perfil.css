@@ -1,3 +1,62 @@
 #perfilContainer{
     padding-bottom: 48vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#profileLB, #accLB{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vh;
+}
+
+#profileLB{
+    top: 40vh;
+}
+
+#accLB{
+    top: 62.5vh;
+}
+
+#deleteACC{
+    top: 98vh;
+    margin-left: -45px;
+}
+
+#hr1, #hr2, #hr3, #hr4{
+    position: absolute;
+    color: black;
+    border: 1px solid;
+    width: 250px;
+}
+
+#hr1{
+    top: 40.79vh;
+    left: 2.22vw;
+}
+
+#hr2{
+    top: 40.79vh;
+    right: 2.22vw;
+}
+
+#hr3{
+    top: 62.89vh;
+    left: 2.22vw;
+}
+
+#hr4{
+    top: 62.89vh;
+    right: 2.22vw;
+}
+
+#hr5{
+    position: absolute;
+    width: 90%;
+    top: 114vh;
+    color: black;
+    border: 1px solid;
+    left: 50%;
+    transform: translateX(-50%);
 }
