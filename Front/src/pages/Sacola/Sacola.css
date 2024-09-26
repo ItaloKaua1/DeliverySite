@@ -1,0 +1,82 @@
+.containerDefaultSacola {
+    display: flex;
+    background-color: white;
+    width: 789px;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin-bottom: 8vh;
+}
+
+h1 {
+  font-size: 26px; /* Tamanho do título */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+  color: #333; /* Cor do título */
+  text-align: center; /* Centraliza o título */
+}
+
+p {
+  font-size: 18px; /* Tamanho do texto padrão */
+  margin: 5px 0; /* Margem vertical entre os parágrafos */
+  color: #555; /* Cor do texto */
+}
+
+.adicionar-mais-button,
+.finalizar-pedido-button {
+  background-color: #28a745; /* Cor de fundo dos botões */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove borda padrão */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  padding: 12px 20px; /* Espaçamento interno do botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  font-size: 18px; /* Tamanho do texto do botão */
+  margin-top: 15px; /* Espaçamento acima dos botões */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  display: block; /* Faz os botões ocuparem toda a largura */
+  width: 100%; /* Largura total */
+}
+
+.adicionar-mais-button:hover,
+.finalizar-pedido-button:hover {
+  background-color: #218838; /* Cor ao passar o mouse */
+}
+
+.opcao-entrega {
+  margin-top: 20px; /* Espaçamento acima da seção de entrega */
+  padding: 15px; /* Espaçamento interno */
+  background-color: #e9ecef; /* Cor de fundo da seção de entrega */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.opcoes-entrega {
+  display: flex; /* Flexbox para alinhar botões horizontalmente */
+  justify-content: space-around; /* Espaço igual entre os botões */
+  margin-bottom: 15px; /* Margem abaixo das opções de entrega */
+}
+
+.entrega-button {
+  flex: 1; /* Cada botão ocupa espaço igual */
+  padding: 12px; /* Espaçamento interno do botão */
+  background-color: #ffffff; /* Cor de fundo do botão */
+  border: 1px solid #ccc; /* Borda leve */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  font-size: 16px; /* Tamanho do texto do botão */
+  transition: background-color 0.3s, border-color 0.3s; /* Transições suaves */
+  margin: 0 5px; /* Margem lateral entre os botões */
+}
+
+.entrega-button.selected {
+  background-color: #007bff; /* Cor de fundo quando selecionado */
+  color: white; /* Cor do texto quando selecionado */
+  border-color: #007bff; /* Borda da cor selecionada */
+}
+
+.entrega-button:hover {
+  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./ApresentationScreen.css"
 
 function ApresentationScreen () {
@@ -7,12 +8,13 @@ function ApresentationScreen () {
             <div id="containerApresentation">
                 <label id="labelInitialApresentation">Faça do seu <strong>almoço</strong> um momento especial com nossas <strong>marmitas</strong> feitas com <strong>carinho!</strong></label>
                 
-                <button id="createAccButtonApresentation">Crie sua conta</button>
+                <Link to={'Cadastro'}> <button id="createAccButtonApresentation">Crie sua conta</button> </Link>
 
                 <hr id="linhaApresentation"></hr>
 
                 <label id="labelQuestionApresentation">Já possui cadastro?</label>
-                <button id="loginButtonApresentation">Faça login</button>
+                
+                <Link to={'Login'}> <button id="loginButtonApresentation">Faça login</button> </Link>
                 
             </div>
         </>

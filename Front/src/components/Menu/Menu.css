@@ -1,3 +1,4 @@
+/* Container geral para o cardápio */
 .divCardapio {
     background-color: #f1f1f1;
     width: 789px;
@@ -5,27 +6,25 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 15px;
     align-items: flex-start;
     margin-bottom: 0;
 }
 
-.Link{
+/* Estilo para links dentro do cardápio */
+.Link {
     text-decoration: none;
     color: inherit;
 }
 
-#divCombos{
-    margin-top: 0;
-}
-
+/* Título da seção */
 #titulo {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
-    margin-bottom: 10px;
     margin-left: 10px;
 }
 
+/* Container para cada opção do cardápio */
 .divOpcao {
     width: 789px;
     height: 150px;
@@ -35,77 +34,126 @@
     cursor: pointer;
     position: relative;
     display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
+/* Nome do item no cardápio */
 .nome {
-    margin-left: 10px;
     flex: 1;
     align-self: baseline;
+    margin-top: 20px;
+    margin-left: 0;
+    font-size: 18px;
 }
 
-
-#preco {
+/* Preço dos itens no cardápio */
+#preco, #preco2, #precoC {
     margin-left: 10px;
-    font-size: bold;
+    font-weight: bold;
     flex: 1;
     align-self: center;
     justify-content: flex-start;
-    transform: translateX(-103%); 
-    font-weight: bold;
-    margin-bottom: 1px;
+    font-size: 2.4vh;
 }
 
-.imgMenu {
+/* Ajustes específicos para o preço */
+#preco {
+    transform: translateX(-103%);
+    margin-top: 15px;
+    font-size: 2.4vh;
+}
+
+#preco2 {
+    transform: translateX(-102.5%);
+}
+
+/* Imagem dos itens do cardápio */
+.imgMenu, #imgCocada, #imgSuco {
     width: 120px;
     height: auto;
     flex: 0.6;
     align-self: center;
     margin-right: 10px;
+    max-height: 100px; /* Limite a altura máxima para manter o layout */
 }
 
-#divCombos{
+/* Ajuste específico para a imagem do suco */
+#imgSuco {
+    width: 100px; /* Ajuste conforme necessário */
+}
+
+/* Seções específicas do cardápio */
+#divCombos, #divSobremesas, #divBebidas {
+    margin-top: 0;
+    border-bottom: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#divCombos {
     height: 370px;
-    border-bottom: 0px;
-}
-
-#space{
-    margin-top: 4px;
 }
 
 #divSobremesas {
     height: auto;
-    margin-top: 0;
-    border-bottom: 0px;
-}
-
-#imgCocada {
-    width: 120px;
-    height: 100px;
-    flex: 0.6;
-    align-self: center;
-    margin-right: 10px;
 }
 
 #divBebidas {
-    margin-top: 0;
     height: auto;
-    padding-bottom: 14vh;
+    padding-bottom: 10vh;
 }
 
-#imgSuco {
-    width: 0px;
-    flex: 0.5;
-    align-self: center;
-    margin-right: 32px;
+.confirmContainer {
+    width: calc(100% - 40px);
+    height: 80px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 1002;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
 }
 
-#preco2{
-    margin-left: 10px;
-    font-size: bold;
-    flex: 1;
-    align-self: center;
-    justify-content: flex-start;
-    transform: translateX(-102.5%); 
-    font-weight: bold;
-    margin-bottom: 1px;
+.quantidade-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os botões e o input */
+}
+
+.quantity-button {
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    width: 45px; /* Tamanho dos botões */
+    height: 45px; /* Tamanho dos botões */
+    border-radius: 50%;
+    font-size: 22px; /* Tamanho da fonte */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.quantity-button:hover {
+    background-color: #2980b9;
+}
+
+.quantity-input {
+    width: 50px; /* Tamanho do input */
+    height: 40px; /* Tamanho do input */
+    text-align: center;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

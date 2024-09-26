@@ -15,9 +15,23 @@
     transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
 }
 
+.containerItems.active .img {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(89%) saturate(3717%) hue-rotate(182deg) brightness(99%) contrast(92%); /* Exemplo de filtro para mudar a cor */
+}
+
+.containerItems.active #textoNav {
+color: #007bff; /* Cor do texto quando ativo */
+}
+
 #NavbarDiv:hover {
-    background-color: #f9f9f9; /* Cor de fundo ao passar o mouse */
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais forte ao passar o mouse */
+  background-color: #f9f9f9; /* Cor de fundo ao passar o mouse */
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais forte ao passar o mouse */
+}
+
+.img {
+  width: 40px; /* Largura ajustada */
+  height: auto; /* Mantém a proporção da imagem */
+  transition: transform 0.3s; /* Transição suave ao passar o mouse */
 }
 
 .containerItems {
@@ -32,37 +46,16 @@
     padding-top: 10px;
 }
 
-.img {
-    width: 40px; /* Largura ajustada */
-    height: auto; /* Mantém a proporção da imagem */
-    transition: transform 0.3s; /* Transição suave ao passar o mouse */
-}
-
 .containerItems:hover .img {
-    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
 }
 
 #textoNav {
-    margin: 5px 0; /* Ajusta a margem em torno do texto */
-    font-size: 0.9rem; /* Tamanho da fonte ajustado */
-    color: #333; /* Cor do texto */
+  margin: 5px 0; /* Ajusta a margem em torno do texto */
+  font-size: 0.9rem; /* Tamanho da fonte ajustado */
+  color: #333; /* Cor do texto */
 }
 
 .containerItems:hover #textoNav {
-    color: #007BFF; /* Cor do texto ao passar o mouse */
-}
-
-@media (max-width: 768px) {
-    #NavbarDiv {
-        height: auto; /* Ajusta a altura para telas menores */
-        padding: 5px 0; /* Ajusta o padding para telas menores */
-    }
-    
-    .img {
-        width: 30px; /* Largura da imagem ajustada */
-    }
-
-    #textoNav {
-        font-size: 0.8rem; /* Ajusta o tamanho da fonte para telas menores */
-    }
+  color: #007bff; /* Cor do texto ao passar o mouse */
 }

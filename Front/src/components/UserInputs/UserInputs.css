@@ -1,0 +1,88 @@
+#divUserI{
+    position: absolute;
+    width: 38vw;
+    height: 90vh;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#nameUser, #emailUser, #passwordUser{
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 38px;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.3vh;
+    border-radius: 1.5cqmin;
+    border-style: hidden;
+    outline: none;
+    padding: 10px;
+    font-size: 2.5vh;
+    max-width: 588px;
+    border: solid black 1.5px;
+    margin: 0px;
+    margin-left: -10px;
+}
+
+.password-container{
+    position: relative; /* Importante para o ícone absoluto */
+    width: 510px;       /* Largura total */
+    height: 38px;       /* Altura do campo */
+    margin: 0 auto;     /* Centraliza o contêiner */
+    display: flex;
+    align-items: center;
+    border-radius: 1.5cqmin;
+    top: 64vh;
+}
+
+.toggle-password-icon {
+    position: absolute;
+    right: 15px;         /* Distância do lado direito do input */
+    top: 50%;            /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    width: 24px;         /* Tamanho do ícone */
+    height: 24px;
+    cursor: pointer;     /* Muda o cursor ao passar sobre o ícone */
+}
+
+#nameUser{
+    top: 47vh;
+}
+
+#emailUser{
+    top: 59vh;
+}
+
+#passwordUser{
+    width: 100%;         /* O input ocupa todo o espaço */
+    height: 100%;        /* Altura igual ao contêiner */
+    padding-right: 40px; /* Espaço para o ícone à direita */
+    border: solid black 1.5px;      /* Remove a borda padrão do input */
+    font-size: 2.5vh;  
+}
+
+#nameU, #emailU, #passwordU{
+    position: relative;
+    display: flex;
+    font-size: 2.34vh;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateX(-250px); /* Alinha os labels à esquerda dos inputs*/
+}
+
+#nameU{
+    top: 45vh;
+}
+
+#emailU{
+    top: 57vh;
+}
+
+#passwordU{
+    top: 62vh;
+}

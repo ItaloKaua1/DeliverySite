@@ -3,41 +3,20 @@ import './SearchBar.css'; // Adicione seus estilos CSS aqui
 
 const items = ["Marmita", "Combos", "Sobremesas", "Bebidas"];
 
-function SearchBar() {
-    const [searchTerm, setSearchTerm] = useState('');
-    const [filteredItems, setFilteredItems] = useState(items);
+function SearchBar({setSearchTerm}) {
 
     const handleChange = (event) => {
         const term = event.target.value;
-        setSearchTerm(term);
-        if (term) {
-            setFilteredItems(items.filter(item => item.toLowerCase().includes(term.toLowerCase())));
-        } else {
-            setFilteredItems(items);
-        }
+        setSearchTerm(term) 
     };
 
     return (
         <div className="search-bar">
-        <input 
-            type="text" 
-            value={searchTerm} 
-            onChange={handleChange} 
-            placeholder="Pesquisar..." 
-        />
-        {searchTerm && (
-            <div className="results">
-            {filteredItems.length > 0 ? (
-                <ul>
-                {filteredItems.map((item, index) => (
-                    <li key={index}>{item}</li>
-                ))}
-                </ul>
-            ) : (
-                <p>Nenhum resultado encontrado.</p>
-            )}
-            </div>
-        )}
+            <input 
+                type="text" 
+                onChange={handleChange} 
+                placeholder="Pesquisar..." 
+            />
         </div>
     );
 }

@@ -2,15 +2,24 @@ import ReactDOM from "react-dom/client";
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import ApresentationScreen from "./pages/ApresentationScreen/ApresentationScreen";
 import Home from "./pages/Home/Home"
 import MontarMarmita from "./pages/MonteSuaMarmita/MontarMarmita"
 import Perfil from "./pages/Perfil/Perfil";
+import Cadastro from "./pages/Cadastro/Cadastro";
+import Login from "./pages/Login/Login";
+import Sacola from "./pages/Sacola/Sacola";
+import Pedidos from "./pages/Pedidos/Pedidos";
 
 const router = createBrowserRouter(
   [
     {
       path:"/",
-      element: <Home/>,
+      element: <ApresentationScreen />,
+    },
+    {
+      path:"/Home",
+      element: <Home />,
     },
     {
       path:"/MonteSuaMarmita",
@@ -19,6 +28,22 @@ const router = createBrowserRouter(
     {
       path:"/Perfil",
       element: <Perfil />
+    },
+    {
+      path:"/Cadastro",
+      element: <Cadastro />,
+    },
+    {
+      path:"/Login",
+      element: <Login />,
+    },
+    {
+      path:"/Sacola",
+      element: <Sacola />
+    },
+    {
+      path:"/Pedidos",
+      element: <Pedidos />
     }
   ]
 )

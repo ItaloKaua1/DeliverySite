@@ -1,7 +1,3 @@
-#perfilContainer{
-    padding-bottom: 48vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
 
 #profileLB, #accLB{
     position: absolute;
@@ -9,56 +5,77 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 3vh;
+    font-family: "Open Sans";
 }
 
 #profileLB{
-    top: 40vh;
+    top: 32.97vh;
 }
 
 #accLB{
-    top: 62.5vh;
-}
-
-#deleteACC{
-    top: 99vh;
-    margin: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 54.07vh;
 }
 
 #hr1, #hr2, #hr3, #hr4{
     position: absolute;
     color: black;
     border: 1px solid;
-    width: 250px;
+    width: 17.36vw;
 }
 
 #hr1{
-    top: 40.79vh;
+    top: 34.79vh;
     left: 2.22vw;
 }
 
 #hr2{
-    top: 40.79vh;
+    top: 34.79vh;
     right: 2.22vw;
 }
 
 #hr3{
-    top: 62.89vh;
+    top: 55.89vh;
     left: 2.22vw;
 }
 
 #hr4{
-    top: 62.89vh;
+    top: 55.89vh;
     right: 2.22vw;
 }
 
 #hr5{
     position: absolute;
-    width: 90%;
-    top: 114vh;
+    width: 93%;
+    top: 105.53vh;
     color: black;
     border: 1px solid;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#deleteACC{
+    position: absolute;
+    top: 87.93vh;
+    left: 7.77vw;
+    font-size: 2.9vh;
+}
+
+.EditI{
+    position: absolute;
+    width: 1.66vw;
+    cursor: pointer;
+    right: 3.7vw;
+}
+
+
+#EditName{
+    top: 45.83vh;
+}
+
+#EditEmail{
+    top: 67.10vh;
+}
+
+#EditPassword{
+    top: 79.99vh;
 }

@@ -1,0 +1,259 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "email": "joao@example.com",
+      "senha": "senha123"
+    },
+    {
+      "id": "2",
+      "nome": "Maria Oliveira",
+      "email": "maria@example.com",
+      "senha": "senha456"
+    },
+    {
+      "id": "5b0c",
+      "nome": "Vitor",
+      "email": "vitorloula3@gmail.com",
+      "senha": "vls210303"
+    },
+    {
+      "id": "2ebb",
+      "nome": "Pedro",
+      "email": "pedro@gmail.com",
+      "senha": "pedro123"
+    },
+    {
+      "id": "4b18",
+      "nome": "Ítalo Kauã",
+      "email": "italo.kaua.11@gmail.com",
+      "senha": "kaua8707"
+    }
+  ],
+  "marmitas": [
+    {
+      "id": "1",
+      "nome": "Monte sua marmita",
+      "preco": "R$ 15,00",
+      "imagem": "/MonteSuaMarmita.png",
+      "link": "/MonteSuaMarmita"
+    }
+  ],
+  "combos": [
+    {
+      "id": "2",
+      "nome": "Marmita + Refrigerante Lata",
+      "preco": "R$ 18,50",
+      "imagem": "/ComboLataMarmita.png"
+    },
+    {
+      "id": "3",
+      "nome": "2 Marmitas + Cocada Caseira + Refri 1L",
+      "preco": "R$ 38,50",
+      "imagem": "/marmitacombo3.png"
+    }
+  ],
+  "sobremesas": [
+    {
+      "id": "4",
+      "nome": "Cocada caseira",
+      "preco": "R$ 4,50",
+      "imagem": "/cocada_post.jpeg"
+    }
+  ],
+  "bebidas": [
+    {
+      "id": "5",
+      "nome": "Refrigerante 1L",
+      "preco": "R$ 7,00",
+      "imagem": "/Refrigerante_1l_post.jpeg"
+    },
+    {
+      "id": "6",
+      "nome": "Refrigerante 350ml",
+      "preco": "R$ 3,50",
+      "imagem": "/Refrigerante_mini_post.jpeg"
+    },
+    {
+      "id": "7",
+      "nome": "Refrigerante Lata",
+      "preco": "R$ 4,50",
+      "imagem": "/post_refri_lata"
+    },
+    {
+      "id": "8",
+      "nome": "Suco 300ml",
+      "preco": "R$ 3,50",
+      "imagem": "/Suco_post.jpeg"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "1",
+      "carnes": [
+        "Frango",
+        "Carne de Sol"
+      ],
+      "guarnicoes": [
+        "Arroz",
+        "Batata Frita"
+      ],
+      "saladas": [
+        "Alface",
+        "Tomate"
+      ],
+      "quantidade": 2,
+      "opcaoEntrega": "Delivery"
+    },
+    {
+      "id": "c6b0",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Arroz branco",
+        "Baião",
+        "Macarrão",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "fb9f",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Arroz branco",
+        "Baião",
+        "Macarrão",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "bff9",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Arroz branco",
+        "Baião",
+        "Macarrão",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "2cdf",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Arroz branco",
+        "Baião",
+        "Macarrão",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "633f",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Arroz branco",
+        "Baião",
+        "Macarrão",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "f56a",
+      "carnesEscolhidas": [
+        "Bife de fígado",
+        "Frango ao molho"
+      ],
+      "guarnicoesEscolhidas": [
+        "Feijão carioca",
+        "Feijão de corda",
+        "Macarrão"
+      ],
+      "saladasEscolhidas": [
+        "Vinagrete"
+      ],
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "1b2a",
+      "quantidade": 1,
+      "opcaoEntrega": "retirada"
+    },
+    {
+      "id": "83bc",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Baião",
+        "Arroz branco",
+        "Arroz à grega"
+      ],
+      "saladasEscolhidas": [],
+      "quantidade": 1,
+      "opcaoEntrega": "delivery"
+    },
+    {
+      "id": "07b2",
+      "quantidade": 1,
+      "opcaoEntrega": "delivery"
+    },
+    {
+      "id": "ef3b",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Cuscuz",
+        "Feijão de corda",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Salada cozida"
+      ],
+      "quantidade": 3,
+      "opcaoEntrega": "delivery"
+    }
+  ]
+}

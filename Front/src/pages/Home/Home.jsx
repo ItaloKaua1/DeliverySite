@@ -9,6 +9,8 @@ import SearchBar from '../../components/SearchBar/SearchBar'
 import React, { useState } from 'react'
 import './Home.css'
 
+
+//home sem bug
 const Home = () => {
     const items = ["Marmita", "Combos", "Sobremesas", "Bebidas"]
 
@@ -21,14 +23,15 @@ const Home = () => {
     const handleCloseModal = () => {
         setModalOpen(false)
     }
+    //sjjsajsj
+    //ksmaksm
 
     return (
-        <div className='containerDefault' id='divHome'>
+        <div className='containerDefault'>
             <Logo className= 'logoHome'/>
             <HorarioFuncionamento onClick={handleOpenModal} />
             <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
             <Navbar />
-            <SearchBar items={items}/>
             <Menu />
         </div>
     )
