@@ -237,6 +237,23 @@
       "id": "07b2",
       "quantidade": 1,
       "opcaoEntrega": "delivery"
+    },
+    {
+      "id": "ef3b",
+      "carnesEscolhidas": [
+        "Bife acebolado",
+        "Bife de fígado"
+      ],
+      "guarnicoesEscolhidas": [
+        "Cuscuz",
+        "Feijão de corda",
+        "Feijão carioca"
+      ],
+      "saladasEscolhidas": [
+        "Salada cozida"
+      ],
+      "quantidade": 3,
+      "opcaoEntrega": "delivery"
     }
   ]
 }
